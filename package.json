@@ -1,0 +1,11 @@
+{
+  "name": "video-upload-lambda",
+  "version": "1.0.0",
+  "description": "Lambda function to generate S3 presigned URLs for video uploads",
+  "type": "module",
+  "main": "lambda.mjs",
+  "dependencies": {
+    "@aws-sdk/client-s3": "^3.645.0",
+    "@aws-sdk/s3-request-presigner": "^3.645.0"
+  }
+}
