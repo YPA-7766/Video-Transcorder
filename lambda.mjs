@@ -1,10 +1,10 @@
 import { S3Client, PutObjectCommand } from "@aws-sdk/client-s3";
 import { getSignedUrl } from "@aws-sdk/s3-request-presigner";
 
-const s3Client = new S3Client({ region: "eu-west-2" });
+const s3Client = new S3Client({ region: "us-east-1" });
 
 export const handler = async (event) => {
-    // CORS headers - this is what fixes your error!
+    
     const headers = {
         'Access-Control-Allow-Origin': '*',
         'Access-Control-Allow-Headers': 'Content-Type',
@@ -50,7 +50,7 @@ export const handler = async (event) => {
         
         // Create S3 command
         const command = new PutObjectCommand({
-            Bucket: "dp-video-uploads-123", // Replace with your actual bucket name
+            Bucket: "uploads-video-storage", 
             Key: key,
             ContentType: fileType
         });
