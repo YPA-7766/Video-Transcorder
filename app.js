@@ -1,5 +1,5 @@
 // Browser-side JavaScript for video upload
-const API_ENDPOINT = 'https://n66p2s3u97.execute-api.eu-west-2.amazonaws.com'; // Replace with your API Gateway URL
+const API_ENDPOINT = 'https://952j9ycbhk.execute-api.eu-west-2.amazonaws.com/GenerateUploadUrl'; // Updated API Gateway URL with correct route
 
 async function uploadVideo() {
     const fileInput = document.getElementById('videoInput');
