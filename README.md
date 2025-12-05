@@ -9,3 +9,6 @@ In the EC2 you gotta run the code from vscode because eclipse ide is not well se
 Currently there are still some minor bugs at the Java Worker stage due to timing of SQS receipts but i'll fix it eventually.
 
 This was a pretty hard and frustrating project to work with because its my first time using Javascript,Java,HTML,AWS,Ffmpeg,DynamoDB etc. So I did use AI to guide me through the processes, but obviously most of the things were done by me (i did not use AWS CLI so Copilot cannot write the AWS code for me). 
+
+
+I was also not able to publish the code from the EC2 and lambda functions because i do not know how to do that and i'm afraid i will ruin some things in the repo (i'm still new to this). 
